@@ -1,99 +1,108 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Maquiagem</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #fff8f5;
-            color: #2d2d2d;
-        }
-        header {
-            background: #ff0000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 span {
-            color: #ffdd00;
-        }
-        .content {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .highlight {
-            background-color: #ffdd00;
-            padding: 5px 10px;
-            border-radius: 5px;
-            color: #2d2d2d;
-            font-weight: bold;
-        }
-        .promo {
-            background-color: #ff0000;
-            color: white;
-            padding: 15px;
-            margin: 20px 0;
-            text-align: center;
-            font-size: 1.3em;
-            border-radius: 8px;
-        }
-        img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-        }
-        .comments {
-            background: #fbe4d5;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        form input, form textarea {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        form button {
-            background: #ff0000;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Maquiagem Profissional</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f5;
+      margin: 0;
+      padding: 0;
+      color: #2d2d2d;
+    }
+    header {
+      background-color: #ff0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .promo {
+      background-color: #ffdd00;
+      color: #2d2d2d;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .content img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 20px auto;
+    }
+    .comments {
+      background-color: #fbe4d5;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .comments h2 {
+      margin-top: 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Curso de <span>Maquiagem</span></h1>
-        <p>Aprenda todas as técnicas e destaque-se no mercado de trabalho.</p>
-    </header><div class="content">
-    <img src="img/curso_maquiagem.jpg" alt="Curso de Maquiagem">
-    <div class="promo">
-        De <del>R$ 400,00</del> por apenas <span class="highlight">R$ 297,00</span>!
+  <header>
+    <h1>Curso de Maquiagem Profissional</h1>
+    <p>Transforme sua paixão em profissão!</p>
+  </header>
+
+  <div class="promo">
+    De <del>R$ 400,00</del> por apenas <strong>R$ 297,00</strong>!
+  </div>
+
+  <div class="content">
+    <!-- Imagem de impacto no início -->
+    <img src="TRISTE.png" alt="Não perca essa chance" />
+
+    <!-- Imagem principal do curso -->
+    <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem Profissional" />
+
+    <!-- Imagem de prova social -->
+    <img src="100 mil.png" alt="Alcance seus primeiros 100 mil reais" />
+
+    <!-- Vídeo promocional -->
+    <div style="text-align:center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <img src="img/100mil_alunos.jpg" alt="Mais de 100 mil alunos">
-    <img src="img/sentimos_sua_falta.jpg" alt="Estamos sentindo sua falta">
-
+    <!-- Área de comentários -->
     <div class="comments">
-        <h2>Deixe seu comentário</h2>
-        <form action="https://formsubmit.co/peritojonathan268@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="message" rows="4" placeholder="Escreva seu comentário aqui..." required></textarea>
-            <input type="hidden" name="_subject" value="Novo comentário no site de maquiagem">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://jonhjlr.github.io/Cursos-de-beleza-/">
-            <button type="submit">Enviar</button>
-        </form>
+      <h2>Deixe seu comentário</h2>
+      <form action="https://formsubmit.co/peritojonathan268@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="message" rows="4" placeholder="Escreva seu comentário aqui..." required></textarea>
+        <input type="hidden" name="_subject" value="Novo comentário no site de maquiagem" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://jonhjlr.github.io/Cursos-de-beleza-/" />
+        <button type="submit">Enviar</button>
+      </form>
     </div>
-</div>
-
+  </div>
 </body>
 </html>
