@@ -1,168 +1,99 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso de Beleza - Combo Especial</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fff9f0;
-      color: #222;
-    }
-    header {
-      background: linear-gradient(to right, #ff0000, #ffc107);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-      padding: 10px 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 0;
-    }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 20px;
-    }
-    .banner {
-      width: 100%;
-      max-width: 600px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-    .promo {
-      background: #ffe082;
-      padding: 20px;
-      text-align: center;
-      font-size: 1.5em;
-      font-weight: bold;
-      border: 2px dashed #e53935;
-      margin: 20px;
-      border-radius: 8px;
-    }
-    .video {
-      text-align: center;
-      margin: 20px;
-    }
-    .video iframe {
-      width: 90%;
-      max-width: 560px;
-      height: 315px;
-      border-radius: 12px;
-      border: none;
-    }
-    .cta {
-      text-align: center;
-      margin: 30px;
-    }
-    .cta a {
-      background-color: #ff0000;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.2em;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease;
-    }
-    .cta a:hover {
-      background-color: #e53935;
-    }
-    .comentarios {
-      margin: 30px;
-      background: #fff3cd;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .comentarios h2 {
-      text-align: center;
-    }
-    .comentarios form {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .comentarios input, 
-    .comentarios textarea {
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-    }
-    .comentarios button {
-      background-color: #ff0000;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1em;
-      transition: background-color 0.3s ease;
-    }
-    .comentarios button:hover {
-      background-color: #e53935;
-    }
-    .rodape {
-      text-align: center;
-      font-size: 0.9em;
-      margin: 20px;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Maquiagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff8f5;
+            color: #2d2d2d;
+        }
+        header {
+            background: #ff0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 span {
+            color: #ffdd00;
+        }
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .highlight {
+            background-color: #ffdd00;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #2d2d2d;
+            font-weight: bold;
+        }
+        .promo {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.3em;
+            border-radius: 8px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+        }
+        .comments {
+            background: #fbe4d5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background: #ff0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>Super Combo - Curso de Beleza</h1>
-    <p>De R$ 400,00 por apenas <span style="color:#ffeb3b;">R$ 297,00!</span></p>
-  </header>
-
-  <div class="container">
-    <!-- Banner principal: imagem exportada do PSD -->
-    <img src="https://jonhjlr.github.io/Cursos-de-beleza-/img/MAQUIAGEM_exportada.png" class="banner" alt="Arte do Curso de Maquiagem">
-
-    <!-- Promoção destacada -->
+    <header>
+        <h1>Curso de <span>Maquiagem</span></h1>
+        <p>Aprenda todas as técnicas e destaque-se no mercado de trabalho.</p>
+    </header><div class="content">
+    <img src="img/curso_maquiagem.jpg" alt="Curso de Maquiagem">
     <div class="promo">
-      <del>R$ 400,00</del> por apenas <strong style="color:#d32f2f;">R$ 297,00!</strong><br>
-      Oferta especial por tempo limitado!
+        De <del>R$ 400,00</del> por apenas <span class="highlight">R$ 297,00</span>!
     </div>
 
-    <!-- Vídeo do YouTube -->
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <img src="img/100mil_alunos.jpg" alt="Mais de 100 mil alunos">
+    <img src="img/sentimos_sua_falta.jpg" alt="Estamos sentindo sua falta">
 
-    <!-- Botão de Chamada para Ação -->
-    <div class="cta">
-      <a href="https://go.hotmart.com/Y99219613A" target="_blank">Quero Garantir Meu Acesso!</a>
+    <div class="comments">
+        <h2>Deixe seu comentário</h2>
+        <form action="https://formsubmit.co/peritojonathan268@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" rows="4" placeholder="Escreva seu comentário aqui..." required></textarea>
+            <input type="hidden" name="_subject" value="Novo comentário no site de maquiagem">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://jonhjlr.github.io/Cursos-de-beleza-/">
+            <button type="submit">Enviar</button>
+        </form>
     </div>
-
-    <!-- Seção de Comentários -->
-    <div class="comentarios">
-      <h2>Deixe seu comentário</h2>
-      <form action="https://formspree.io/f/moqgggeq" method="POST">
-        <input type="text" name="nome" placeholder="Seu nome" required>
-        <textarea name="comentario" placeholder="Escreva aqui seu comentário..." rows="4" required></textarea>
-        <button type="submit">Enviar Comentário</button>
-      </form>
-    </div>
-
-    <!-- Rodapé -->
-    <div class="rodape">
-      © 2025 Curso de Beleza. Todos os direitos reservados.
-    </div>
-  </div>
+</div>
 
 </body>
 </html>
