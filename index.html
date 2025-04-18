@@ -1,96 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!DOCTYPE html><html lang="pt-br"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cursos de Beleza</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #fff5f5;
+      padding: 0;
+      background: #fff8f0;
       color: #333;
     }
-
     header {
       background-color: #ff0000;
       color: white;
       padding: 20px;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
+    h1, h2 {
+      color: #cc0000;
     }
-
     section {
       padding: 20px;
     }
-
-    .promo {
-      background-color: #fff3cd;
-      color: #856404;
-      border-left: 6px solid #ffc107;
-      padding: 15px;
-      margin: 20px 0;
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
     }
-
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
     img {
       max-width: 100%;
       height: auto;
-      display: block;
-      margin: 20px auto;
       border-radius: 10px;
     }
-
-    .cta {
+    footer {
+      background-color: #333;
+      color: white;
       text-align: center;
-      margin-top: 30px;
-    }
-
-    .cta button {
-      background-color: #ffcc00;
-      color: #000;
-      font-size: 18px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .cta button:hover {
-      background-color: #ff9900;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
-</head>
-<body>
-
+</head><body>
   <header>
     <h1>Curso de Maquiagem Profissional</h1>
-    <p>Transforme sua paixão em profissão!</p>
-  </header>
-
-  <section>
-    <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem">
-
-    <div class="promo">
-      Promoção por tempo limitado: de <s>R$400</s> por <strong style="color: red;">R$297</strong>!
+    <p>De <s>R$400,00</s> por apenas <strong style="color: #ffff00;">R$297,00</strong>!</p>
+    <a href="#" class="btn">Garanta sua vaga</a>
+  </header>  <section>
+    <h2>Aprenda com os melhores profissionais!</h2>
+    <div class="img-container">
+      <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem">
     </div>
-
-    <p>Aprenda todas as técnicas de maquiagem com profissionais experientes. Comece hoje mesmo e destaque-se no mercado da beleza.</p>
-
-    <img src="100 mil.png" alt="100 mil alunos matriculados">
-    <p style="text-align: center; font-weight: bold;">Mais de 100 mil alunos já se inscreveram. Só falta você!</p>
-
-    <img src="TRISTE.png" alt="Estamos sentindo sua falta">
-    <p style="text-align: center;"><em>“Uma mente limitada é aquela que acredita que o conhecimento não é necessário.”</em></p>
-  </section>
-
-  <div class="cta">
-    <button onclick="window.location.href='https://hotmart.com'">Garantir minha vaga agora</button>
-  </div>
-
-</body>
-</html>
+    <p>Transforme sua carreira na beleza. Com aulas práticas, você estará pronta para atuar no mercado com confiança e técnica!</p>
+  </section>  <section>
+    <h2>Assista ao vídeo explicativo:</h2>
+    <div class="img-container">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUTUBE_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>  <section>
+    <div class="img-container">
+      <img src="100 mil.png" alt="Mais de 100 mil alunos matriculados">
+    </div>
+  </section>  <section>
+    <h2>Comentários</h2>
+    <p>Veja o que estão dizendo sobre o curso!</p>
+    <!-- Área para comentários futura -->
+  </section>  <section>
+    <div class="img-container">
+      <img src="TRISTE.png" alt="Estamos sentindo sua falta">
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 Cursos de Beleza. Todos os direitos reservados.</p>
+  </footer>
+</body></html>
