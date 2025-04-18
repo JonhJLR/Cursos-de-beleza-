@@ -1,163 +1,159 @@
-<!DOCTYPE html><html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso de Beleza - Promoção Exclusiva</title>
+<!DOCTYPE html><html lang="pt-br"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Beleza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff8f0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f0, #fffde0);
       color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #ff0000, #ff6600);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-    .btn-cta {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #ffcc00;
-      color: #000;
-      padding: 15px 30px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .section:nth-of-type(even) {
-      background-color: #fff5e6;
-    }
-    .section h2 {
-      color: #cc0000;
-      font-size: 1.8em;
-      margin-bottom: 20px;
-    }
-    .section p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      max-width: 800px;
-      margin: 0 auto 20px;
-    }
-    .img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin: 20px auto;
-    }
-    .video-container {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-      border-radius: 10px;
-      border: none;
-    }
-    .highlight {
-      background-color: #ffcc00;
-      color: #b30000;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 1.2em;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .form-section {
-      background-color: #fff8f0;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin: 0 auto;
-      gap: 15px;
-    }
-    input, textarea {
-      padding: 12px;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      background-color: #ff0000;
-      color: white;
-      padding: 12px;
-      font-size: 1em;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #cc0000;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: #fff;
-    }
+    }header {
+  background: linear-gradient(90deg, #ff4d4d, #ffc107);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+.highlight {
+  color: #d62828;
+  font-weight: bold;
+}
+
+.video-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.video-section iframe {
+  width: 90%;
+  max-width: 600px;
+  height: 315px;
+  border-radius: 10px;
+}
+
+.imagem-prova-social {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.motivacional {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.motivacional img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.botao-com-contador {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(to right, #ff4d4d, #ffc107);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+}
+
+.botao-com-contador span {
+  display: block;
+  font-size: 14px;
+}
+
+#comentarios {
+  padding: 40px;
+  background: linear-gradient(to right, #fff4e6, #ffe5ec);
+  color: #333;
+}
+
+#comentarios form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#comentarios input,
+#comentarios textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#comentarios button {
+  background-color: #d62828;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
   </style>
-</head>
-<body>
+</head><body>
   <header>
-    <h1>Promoção Imperdível: <span style="color:#ffff00;">De R$400 por R$297</span></h1>
-    <p>Transforme sua paixão em profissão com nosso Curso de Maquiagem Profissional.</p>
-    <a href="https://go.hotmart.com/Y99219613A" target="_blank" class="btn-cta">Garanta sua Vaga Agora!</a>
-  </header>  <div class="section">
-    <h2>O que você vai aprender</h2>
-    <ul style="list-style: disc; text-align: left; max-width: 600px; margin: 20px auto;">
-      <li>Técnicas profissionais de maquiagem para iniciantes e avançados</li>
-      <li>Design de sobrancelhas e visagismo</li>
-      <li>Gestão de clientes e aumento de vendas</li>
-    </ul>
-  </div>  <div class="section">
-    <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem" class="img" />
-  </div>  <div class="section">
-    <h2>Assista ao vídeo explicativo</h2>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
-    </div>
-  </div>  <div class="section">
-    <img src="100 mil.png" alt="Mais de 100 mil alunos satisfeitos" class="img" />
-    <p class="highlight">Já somos mais de 100 mil alunos transformando suas carreiras na beleza!</p>
-  </div>  <div class="section">
-    <p>Essa oportunidade é por tempo limitado e pode ser encerrada a qualquer momento.</p>
-    <a href="https://go.hotmart.com/Y99219613A" target="_blank" class="btn-cta">Eu quero participar!</a>
-  </div>  <div class="section">
-    <img src="TRISTE.png" alt="Estamos sentindo sua falta" class="img" />
-  </div>  <div class="section form-section">
-    <h2>Comentários e Dúvidas</h2>
-    <p>Deixe seu comentário ou pergunta e receba nossas respostas por e-mail!</p>
-    <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <textarea name="message" rows="4" placeholder="Sua mensagem" required></textarea>
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_template" value="box" />
-      <input type="hidden" name="_subject" value="Comentário na landing page" />
-      <input type="hidden" name="_url" value="https://jonhjlr.github.io/Cursos-de-beleza-/" />
-      <button type="submit">Enviar Comentário</button>
+    <h1>Aprenda Maquiagem Profissional</h1>
+    <p>De <span class="highlight">R$400</span> por apenas <span class="highlight">R$297</span>!</p>
+    <a href="https://go.hotmart.com/Y99219613A" class="botao-com-contador" id="botaoTopo">
+      Quero garantir minha vaga
+      <span id="contadorTopo">Oferta expira em 4:00</span>
+    </a>
+  </header>  <div class="container">
+    <p>Este curso é ideal para você que quer iniciar na área da beleza ou aperfeiçoar suas técnicas. Com aulas práticas, suporte e certificado!</p>
+  </div>  <div class="video-section">
+    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
+    <img src="100 mil.png" alt="Prova social" class="imagem-prova-social">
+  </div>  <div class="container">
+    <a href="https://go.hotmart.com/Y99219613A" class="botao-com-contador" id="botaoMeio">
+      Sim, quero me inscrever agora
+      <span id="contadorMeio">Oferta expira em 4:00</span>
+    </a>
+  </div>  <section class="motivacional">
+    <img src="TRISTE.png" alt="Mensagem motivacional">
+  </section>  <section id="comentarios">
+    <h2 style="color: red; text-align: center;">Comentários</h2>
+    <p style="text-align: center;">Veja o que estão dizendo sobre o curso e deixe sua dúvida ou mensagem!</p>
+    <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" placeholder="Deixe seu comentário" rows="5" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_subject" value="Novo comentário na landing page">
+      <button type="submit">Enviar comentário</button>
     </form>
-  </div>  <footer>
-    &copy; 2025 Curso de Beleza. Todos os direitos reservados.
-  </footer>
-</body>
-</html>
+  </section>  <script>
+    function iniciarContador(idSpan) {
+      let tempo = 240; // 4 minutos
+      const span = document.getElementById(idSpan);
+
+      function atualizarContador() {
+        const minutos = Math.floor(tempo / 60);
+        const segundos = tempo % 60;
+        span.innerText = `Oferta expira em ${minutos}:${segundos < 10 ? '0' + segundos : segundos}`;
+        tempo--;
+        if (tempo < 0) tempo = 120; // reinicia com 2 minutos após zerar
+      }
+
+      setInterval(atualizarContador, 1000);
+      atualizarContador();
+    }
+
+    iniciarContador('contadorTopo');
+    iniciarContador('contadorMeio');
+  </script></body></html>
