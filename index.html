@@ -1,145 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso de Beleza - Aprenda e Lucre!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Beleza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #ffe5e5, #fff0d4);
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #fff2e6, #ffe5cc);
       color: #333;
     }
+
     header {
-      background: linear-gradient(to right, #ff4d4d, #ffc107);
+      background-color: #ff4d4d;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 30px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    .imagem {
+
+    .video, .prova-social, .motivacional, .comentarios {
       text-align: center;
-      margin: 30px 0;
     }
-    .imagem img {
+
+    .video iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    img {
       max-width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
     }
-    .comentarios {
-      background: linear-gradient(to right, #fff4e0, #ffe5e5);
-      border-radius: 10px;
-      padding: 30px;
-      margin-top: 50px;
+
+    h2 {
+      color: #cc0000;
+      margin-top: 0;
     }
-    .comentarios h2 {
-      color: #d32f2f;
-      text-align: center;
+
+    .botao {
+      display: inline-block;
+      background-color: #ffd11a;
+      color: #000;
+      font-weight: bold;
+      padding: 15px 30px;
+      margin: 30px auto;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
     }
+
     form {
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      max-width: 600px;
-      margin: auto;
+      gap: 10px;
+      margin-top: 20px;
     }
+
     input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #cc0000;
+      color: white;
+      border: none;
       padding: 10px;
       font-size: 16px;
       border-radius: 5px;
-      border: 1px solid #ccc;
     }
-    button {
-      background-color: #d32f2f;
-      color: white;
-      padding: 12px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background-color: #a50000;
-    }
+
     footer {
       text-align: center;
       padding: 20px;
+      background-color: #ffcccc;
       font-size: 14px;
-      color: #777;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Aprenda uma nova profissão e transforme sua vida!</h1>
+    <h1>Transforme sua paixão em profissão</h1>
+    <p>Aprenda as melhores técnicas de maquiagem e design de sobrancelhas</p>
   </header>
 
-  <section>
-    <h2 style="color: #d32f2f;">Você já pensou em ganhar dinheiro com o que ama?</h2>
-    <p>Com o nosso curso de beleza, você pode aprender técnicas profissionais de maquiagem, sobrancelhas e muito mais — tudo isso no seu ritmo e com certificado!</p>
+  <section class="intro">
+    <h2>De R$400 por apenas R$297</h2>
+    <p>Aproveite a promoção por tempo limitado e garanta seu acesso ao curso mais completo da área da beleza.</p>
+    <a class="botao" href="https://go.hotmart.com/Y99219613A" target="_blank">Quero garantir minha vaga!</a>
   </section>
 
-  <section class="video-container">
-    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" title="Vídeo do curso" allowfullscreen></iframe>
+  <section class="video">
+    <h2>Veja tudo o que você vai aprender</h2>
+    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
+    <img src="100 mil.png" alt="Mais de 100 mil alunas impactadas" />
   </section>
 
-  <div class="imagem">
-    <img src="100 mil.png" alt="Prova social: 100 mil alunas transformadas">
-  </div>
-
-  <section>
-    <h2 style="color: #ff5722;">Imagine poder mudar sua realidade financeira...</h2>
-    <p>... trabalhando com o que gosta, de casa ou em um salão, com liberdade de tempo e renda extra. Esse curso é sua porta de entrada para esse novo mundo!</p>
+  <section class="prova-social">
+    <h2>Aprenda no seu ritmo com suporte completo</h2>
+    <p>Estude onde e quando quiser, com materiais exclusivos e suporte das melhores profissionais da área.</p>
+    <img src="MAQUIAGEM (1).jpg" alt="Aluna aprendendo maquiagem" />
   </section>
 
-  <div class="imagem">
-    <img src="TRISTE.png" alt="Imagem motivacional para reflexão">
-  </div>
+  <section class="motivacional">
+    <h2>Você também pode alcançar o sucesso</h2>
+    <img src="TRISTE.png" alt="Mensagem motivacional" />
+  </section>
 
   <section class="comentarios">
     <h2>Comentários</h2>
-    <p style="text-align:center;">Tem dúvidas? Deixe seu comentário e responderemos por e-mail!</p>
-
-    <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST" target="_blank">
+    <p>Veja o que estão dizendo sobre o curso e deixe sua dúvida ou mensagem!</p>
+    <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Seu nome" required>
       <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="message" placeholder="Deixe seu comentário aqui..." rows="5" required></textarea>
-
-      <!-- Formsubmit extras -->
+      <textarea name="message" placeholder="Deixe seu comentário" rows="5" required></textarea>
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="box">
       <input type="hidden" name="_subject" value="Novo comentário na landing page">
-      
       <button type="submit">Enviar comentário</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 Cursos de Beleza. Todos os direitos reservados.
+    &copy; 2025 Curso de Beleza. Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
