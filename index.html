@@ -1,86 +1,91 @@
-<!DOCTYPE html><html lang="pt-br"><head>
+Claro! Aqui está o código HTML completo corrigido, pronto para copiar e colar no seu index.html:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cursos de Beleza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curso de Beleza</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #fffaf2;
+      color: #333;
       margin: 0;
       padding: 0;
-      background: #fff8f0;
-      color: #333;
     }
     header {
-      background-color: #ff0000;
-      color: white;
+      background-color: #ffcc00;
+      color: #fff;
       padding: 20px;
       text-align: center;
-    }
-    h1, h2 {
-      color: #cc0000;
     }
     section {
-      padding: 20px;
+      padding: 40px 20px;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+    h1, h2 {
+      color: #d40000;
     }
-    .img-container {
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .imagem-prova-social {
       text-align: center;
-      margin: 20px 0;
+      margin-top: 20px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-    iframe {
+    .imagem-prova-social img {
       max-width: 100%;
       border-radius: 10px;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
     }
   </style>
-</head><body>
-  <header>
-    <h1>Curso de Maquiagem Profissional</h1>
-    <p>De <s>R$400,00</s> por apenas <strong style="color: #ffff00;">R$297,00</strong>!</p>
-    <a href="https://go.hotmart.com/Y99219613A" class="btn">Garanta sua vaga</a>
-  </header>  <section>
-    <h2>Aprenda com os melhores profissionais!</h2>
-    <div class="img-container">
-      <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem">
-    </div>
-    <p>Transforme sua carreira na beleza. Com aulas práticas, você estará pronta para atuar no mercado com confiança e técnica!</p>
-  </section>  <section>
-    <h2>Assista ao vídeo explicativo:</h2>
-    <div class="img-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>  <section>
-    <div class="img-container">
-      <img src="100 mil.png" alt="Mais de 100 mil alunos matriculados">
-    </div>
-  </section>  <section>
-    <div class="img-container">
-      <img src="TRISTE.png" alt="Estamos sentindo sua falta">
-    </div>
-  </section>  <section>
-    <h2>Comentários</h2>
-    <p>Veja o que estão dizendo sobre o curso!</p>
-    <!-- Área para comentários futura -->
-  </section>  <footer>
-    <p>&copy; 2025 Cursos de Beleza. Todos os direitos reservados.</p>
-  </footer>
-</body></html>
+</head>
+<body>
+
+<header>
+  <h1>Curso de Maquiagem Profissional</h1>
+  <p>Aprenda as melhores técnicas e entre para o mercado de beleza com tudo!</p>
+</header>
+
+<section class="video-container">
+  <h2 style="color: red;">Assista ao vídeo explicativo:</h2>
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
+
+  <!-- Prova social (imagem 100 mil alunos) -->
+  <div class="imagem-prova-social">
+    <img src="100 mil.png" alt="Mais de 100 mil alunos">
+  </div>
+</section>
+
+<!-- Imagem motivacional (TRISTE.png) -->
+<section style="text-align:center; margin: 40px 0;">
+  <img src="TRISTE.png" alt="Mensagem motivacional" style="max-width: 100%; border-radius: 10px;">
+</section>
+
+<!-- Comentários -->
+<section id="comentarios" style="padding: 40px; background-color: #fff8f0;">
+  <h2 style="color: red;">Comentários</h2>
+  <p>Veja o que estão dizendo sobre o curso e deixe sua dúvida ou mensagem!</p>
+
+  <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto;">
+    <input type="text" name="name" placeholder="Seu nome" required style="padding: 10px; font-size: 16px;">
+    <input type="email" name="email" placeholder="Seu e-mail" required style="padding: 10px; font-size: 16px;">
+    <textarea name="message" placeholder="Deixe seu comentário" rows="5" required style="padding: 10px; font-size: 16px;"></textarea>
+    
+    <!-- Campos ocultos -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <input type="hidden" name="_subject" value="Novo comentário na landing page">
+    
+    <button type="submit" style="background-color: red; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px;">Enviar comentário</button>
+  </form>
+</section>
+
+</body>
+</html>
+
+Agora é só colar esse código no index.html do seu GitHub e salvar.
+Se der erro na hora de confirmar a alteração, posso te guiar passo a passo para resolver isso. Quer?
+
