@@ -1,85 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Curso de Beleza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Beleza - Promoção Exclusiva</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fffaf2;
+      background-color: #fff9f5;
       color: #333;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #ffcc00;
+      background-color: #ff0000;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
-    section {
+    h1 span {
+      color: #ffcc00;
+    }
+    .section {
       padding: 40px 20px;
-    }
-    h1, h2 {
-      color: #d40000;
-    }
-    .video-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .imagem-prova-social {
       text-align: center;
-      margin-top: 20px;
     }
-    .imagem-prova-social img {
+    .highlight {
+      background-color: #ffcc00;
+      color: #b30000;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      display: inline-block;
+    }
+    .video-container iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 10px;
+    }
+    img {
       max-width: 100%;
       border-radius: 10px;
     }
+    button {
+      background-color: #ff0000;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .form-section {
+      background-color: #fff8f0;
+      padding: 40px 20px;
+    }
+    .form-section form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .form-section input, .form-section textarea {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-section button {
+      background-color: #ff0000;
+    }
   </style>
 </head>
-<body>
-
-<header>
-  <h1>Curso de Maquiagem Profissional</h1>
-  <p>Aprenda as melhores técnicas e entre para o mercado de beleza com tudo!</p>
-</header>
-
-<section class="video-container">
-  <h2 style="color: red;">Assista ao vídeo explicativo:</h2>
-  <iframe width="360" height="215" src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
-
-  <!-- Prova social (imagem 100 mil alunos) -->
-  <div class="imagem-prova-social">
-    <img src="100 mil.png" alt="Mais de 100 mil alunos">
+<body><header>
+  <h1>Promoção Especial: <span>De R$400 por apenas R$297</span>!</h1>
+</header><section class="section">
+  <p>Este curso foi desenvolvido especialmente para quem busca liberdade financeira e independência através do mundo da beleza.</p>
+  <p class="highlight">Aproveite essa oportunidade única de transformar sua vida!</p>
+</section><section class="section">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
   </div>
-</section>
+</section><section class="section">
+  <img src="100 mil.png" alt="Mais de 100 mil alunos satisfeitos">
+  <p class="highlight">Junte-se a mais de 100 mil alunos que já estão conquistando sua liberdade financeira!</p>
+</section><section class="section">
+  <img src="MAQUIAGEM (1).jpg" alt="Curso de maquiagem profissional">
+</section><section class="section">
+  <p>Não perca tempo! Essa oferta é por tempo limitado e pode sair do ar a qualquer momento.</p>
+  <a href="https://go.hotmart.com/Y99219613A"><button>Quero garantir minha vaga</button></a>
+</section><!-- Imagem motivacional antes dos comentários --><section class="section">
+  <img src="TRISTE.png" alt="Mensagem motivacional">
+</section><!-- Comentários --><section class="form-section">
+  <h2 style="color: #ff0000;">Comentários</h2>
+  <p>Veja o que estão dizendo sobre o curso e deixe sua dúvida ou mensagem!</p>  <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <textarea name="message" placeholder="Deixe seu comentário" rows="5" required></textarea><input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="box">
+<input type="hidden" name="_subject" value="Novo comentário na landing page">
 
-<!-- Imagem motivacional (TRISTE.png) -->
-<section style="text-align:center; margin: 40px 0;">
-  <img src="TRISTE.png" alt="Mensagem motivacional" style="max-width: 100%; border-radius: 10px;">
-</section>
+<button type="submit">Enviar comentário</button>
 
-<!-- Comentários -->
-<section id="comentarios" style="padding: 40px; background-color: #fff8f0;">
-  <h2 style="color: red;">Comentários</h2>
-  <p>Veja o que estão dizendo sobre o curso e deixe sua dúvida ou mensagem!</p>
-
-  <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto;">
-    <input type="text" name="name" placeholder="Seu nome" required style="padding: 10px; font-size: 16px;">
-    <input type="email" name="email" placeholder="Seu e-mail" required style="padding: 10px; font-size: 16px;">
-    <textarea name="message" placeholder="Deixe seu comentário" rows="5" required style="padding: 10px; font-size: 16px;"></textarea>
-    
-    <!-- Campos ocultos -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="box">
-    <input type="hidden" name="_subject" value="Novo comentário na landing page">
-    
-    <button type="submit" style="background-color: red; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px;">Enviar comentário</button>
   </form>
-</section>
-
-</body>
+</section></body>
 </html>
