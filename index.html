@@ -1,159 +1,111 @@
-<!DOCTYPE html><html lang="pt-br"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso de Beleza</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Maquiagem Profissional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(to bottom right, #fff0f0, #fffde0);
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #fff5f0, #ffe6e6);
       color: #333;
-    }header {
-  background: linear-gradient(90deg, #ff4d4d, #ffc107);
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-.container {
-  padding: 20px;
-}
-
-.highlight {
-  color: #d62828;
-  font-weight: bold;
-}
-
-.video-section {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.video-section iframe {
-  width: 90%;
-  max-width: 600px;
-  height: 315px;
-  border-radius: 10px;
-}
-
-.imagem-prova-social {
-  display: block;
-  margin: 20px auto;
-  max-width: 300px;
-}
-
-.motivacional {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.motivacional img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.botao-com-contador {
-  display: inline-block;
-  margin: 20px auto;
-  padding: 15px 25px;
-  font-size: 18px;
-  color: white;
-  background: linear-gradient(to right, #ff4d4d, #ffc107);
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  position: relative;
-}
-
-.botao-com-contador span {
-  display: block;
-  font-size: 14px;
-}
-
-#comentarios {
-  padding: 40px;
-  background: linear-gradient(to right, #fff4e6, #ffe5ec);
-  color: #333;
-}
-
-#comentarios form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: auto;
-}
-
-#comentarios input,
-#comentarios textarea {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#comentarios button {
-  background-color: #d62828;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-}
-
-  </style>
-</head><body>
-  <header>
-    <h1>Aprenda Maquiagem Profissional</h1>
-    <p>De <span class="highlight">R$400</span> por apenas <span class="highlight">R$297</span>!</p>
-    <a href="https://go.hotmart.com/Y99219613A" class="botao-com-contador" id="botaoTopo">
-      Quero garantir minha vaga
-      <span id="contadorTopo">Oferta expira em 4:00</span>
-    </a>
-  </header>  <div class="container">
-    <p>Este curso é ideal para você que quer iniciar na área da beleza ou aperfeiçoar suas técnicas. Com aulas práticas, suporte e certificado!</p>
-  </div>  <div class="video-section">
-    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
-    <img src="100 mil.png" alt="Prova social" class="imagem-prova-social">
-  </div>  <div class="container">
-    <a href="https://go.hotmart.com/Y99219613A" class="botao-com-contador" id="botaoMeio">
-      Sim, quero me inscrever agora
-      <span id="contadorMeio">Oferta expira em 4:00</span>
-    </a>
-  </div>  <section class="motivacional">
-    <img src="TRISTE.png" alt="Mensagem motivacional">
-  </section>  <section id="comentarios">
-    <h2 style="color: red; text-align: center;">Comentários</h2>
-    <p style="text-align: center;">Veja o que estão dizendo sobre o curso e deixe sua dúvida ou mensagem!</p>
-    <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="message" placeholder="Deixe seu comentário" rows="5" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-      <input type="hidden" name="_subject" value="Novo comentário na landing page">
-      <button type="submit">Enviar comentário</button>
-    </form>
-  </section>  <script>
-    function iniciarContador(idSpan) {
-      let tempo = 240; // 4 minutos
-      const span = document.getElementById(idSpan);
-
-      function atualizarContador() {
-        const minutos = Math.floor(tempo / 60);
-        const segundos = tempo % 60;
-        span.innerText = `Oferta expira em ${minutos}:${segundos < 10 ? '0' + segundos : segundos}`;
-        tempo--;
-        if (tempo < 0) tempo = 120; // reinicia com 2 minutos após zerar
-      }
-
-      setInterval(atualizarContador, 1000);
-      atualizarContador();
     }
 
-    iniciarContador('contadorTopo');
-    iniciarContador('contadorMeio');
-  </script></body></html>
+    header {
+      background: linear-gradient(to right, #ff4d4d, #ffcc00);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .motivacional, .video-section, .prova-social, .comentarios {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .comentarios {
+      background: linear-gradient(to bottom, #fff8f0, #ffd6cc);
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background: red;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #ff1a1a, #ffcc00);
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Aprenda Maquiagem Profissional do Zero</h1>
+  <p>Transforme sua paixão em profissão com um curso completo e certificado</p>
+</header>
+
+<section class="video-section">
+  <h2>Assista ao vídeo explicativo</h2>
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section class="prova-social">
+  <img src="100 mil.png" alt="Prova social - 100 mil alunas" />
+</section>
+
+<section class="motivacional">
+  <img src="TRISTE.png" alt="Imagem motivacional" />
+</section>
+
+<section class="comentarios">
+  <h2 style="color: red;">Comentários</h2>
+  <p>Deixe sua dúvida ou comentário. Eu respondo por e-mail e aqui mesmo!</p>
+
+  <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <textarea name="message" placeholder="Deixe seu comentário" rows="5" required></textarea>
+    
+    <!-- Campos ocultos -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <input type="hidden" name="_subject" value="Novo comentário na landing page">
+    
+    <button type="submit">Enviar comentário</button>
+  </form>
+</section>
+
+</body>
+</html>
