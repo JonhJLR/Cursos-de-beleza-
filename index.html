@@ -65,6 +65,25 @@
       max-width: 90%;
       border-radius: 10px;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #e60000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #cc0000;
+    }
   </style>
 </head>
 <body>
@@ -83,6 +102,7 @@
   <section>
     <h2>Meio</h2>
     <p>Com aulas práticas, dicas profissionais e um passo a passo completo, você aprenderá desde o preparo da pele até técnicas avançadas de contorno, iluminação e muito mais.</p>
+    <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem Profissional" style="display: block; margin: 30px auto; max-width: 90%; border-radius: 10px;">
   </section>
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
@@ -98,9 +118,24 @@
   </section>
   <img class="motivacional" src="TRISTE.png" alt="Mensagem motivacional">
   <section class="comentarios">
-    <h2>Comentários</h2>
-    <p>Veja o que estão dizendo sobre o curso ou deixe sua dúvida abaixo!</p>
-    <div id="disqus_thread"></div>
+    <h2>Fale conosco</h2>
+    <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="name" required><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="message" rows="5" required></textarea><br>
+
+      <!-- Campos ocultos para personalização -->
+      <input type="hidden" name="_subject" value="Nova mensagem do site">
+      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
   <footer>
     <p>&copy; 2025 - Curso de Maquiagem Profissional</p>
@@ -118,17 +153,6 @@
     }
     startCountdown("timer1");
     startCountdown("timer2");
-
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = 'curso-maquiagem';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://seu-usuario.disqus.com/embed.js'; // Substitua pelo seu usuário do Disqus
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
   </script>
 </body>
 </html>
