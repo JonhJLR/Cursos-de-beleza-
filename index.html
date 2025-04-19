@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curso de Maquiagem Profissional</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Aprenda maquiagem profissional do zero e transforme sua paixão em profissão. Promoção de R$400 por R$297!" />
+  <meta name="keywords" content="curso maquiagem, maquiagem profissional, make up, beleza" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     /* Fonte e fundo suave */
@@ -13,7 +16,6 @@
       background: linear-gradient(180deg, #fff0e0, #ffe5cc);
       color: #222;
     }
-
     /* Cabeçalho com degradê vibrante */
     header {
       background: linear-gradient(to right, red, orange);
@@ -21,42 +23,35 @@
       padding: 20px;
       text-align: center;
     }
-
-    /* Imagem de topo */
+    header h1, header p {
+      margin: 0;
+    }
+    /* Imagem de topo com nome sem espaços */
     .top-image {
       width: 100%;
       max-height: 400px;
       object-fit: cover;
       display: block;
     }
-
-    /* Seções centrais */
-    section {
+    /* Conteúdo principal semântico */
+    main {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-
-    /* Vídeo e prova social */
-    .video-container {
-      text-align: center;
+    section {
+      margin-bottom: 40px;
     }
-    .video-container iframe {
-      width: 100%;
-      max-width: 700px;
-      height: 400px;
-      border: none;
-      border-radius: 10px;
+    section h2 {
+      color: #cc0000;
+      font-size: 2em;
+      margin-bottom: 15px;
     }
-    img.prova-social,
-    img.motivacional {
-      display: block;
-      margin: 30px auto;
-      max-width: 90%;
-      border-radius: 10px;
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
     }
-
-    /* Botão principal com cronômetro */
+    /* Botão principal com cronômetro melhor detectado */
     .botao {
       display: inline-block;
       background: linear-gradient(to right, #e60000, #ff9900);
@@ -84,7 +79,24 @@
       border-radius: 4px;
       font-weight: bold;
     }
-
+    /* Vídeo e prova social */
+    .video-container {
+      text-align: center;
+    }
+    .video-container iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+    }
+    img.prova-social,
+    img.motivacional {
+      display: block;
+      margin: 30px auto;
+      max-width: 90%;
+      border-radius: 10px;
+    }
     /* Seção de comentários super chamativa */
     .comentarios {
       background: repeating-linear-gradient(
@@ -141,3 +153,99 @@
       animation: popButton 1.8s ease-in-out infinite;
     }
     @keyframes popButton {
+      0%,100% { transform: scale(1); }
+      50%     { transform: scale(1.08); }
+    }
+    .comentarios form button:hover {
+      background: linear-gradient(45deg, #e60000, #ffb800);
+    }
+    /* Rodapé */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Curso de Maquiagem Profissional</h1>
+    <p>Transforme sua paixão em profissão! Promoção de <strong>R$297</strong> (de R$400)</p>
+  </header>
+
+  <img class="top-image" src="maquiagem-1.jpg" alt="Curso de Maquiagem" />
+
+  <main>
+    <section>
+      <h2>Início</h2>
+      <p>Você já sonhou em transformar sua paixão por beleza em uma fonte de renda? O curso de maquiagem profissional foi feito especialmente pra você, que quer começar do zero ou se aperfeiçoar.</p>
+      <a class="botao" href="https://go.hotmart.com/Y99219613A">
+        Garantir acesso
+        <span class="timer" id="timer1"></span>
+      </a>
+    </section>
+
+    <section>
+      <h2>Meio</h2>
+      <p>Com aulas práticas, dicas profissionais e um passo a passo completo, você aprenderá desde o preparo da pele até técnicas avançadas de contorno, iluminação e muito mais.</p>
+    </section>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
+      <img class="prova-social" src="100-mil.png" alt="Mais de 100 mil alunas transformadas">
+    </div>
+
+    <section>
+      <h2>Fim</h2>
+      <p>Além de conteúdo exclusivo, você receberá certificado e suporte direto com especialistas da área. Está pronta para mudar sua vida com o que ama fazer?</p>
+      <a class="botao" href="https://go.hotmart.com/Y99219613A">
+        Começar agora
+        <span class="timer" id="timer2"></span>
+      </a>
+    </section>
+
+    <img class="motivacional" src="triste.png" alt="Mensagem motivacional">
+
+    <section class="comentarios">
+      <h2>💬 Deixe seu comentário!</h2>
+      <p>Compartilhe sua dúvida ou experiência — vamos adorar saber o que você pensa!</p>
+      <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e‑mail" required />
+        <textarea name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input type="hidden" name="_subject" value="Comentário na landing page" />
+        <input type="hidden" name="_url" value="https://jonhjlr.github.io/Cursos-de-beleza-/" />
+        <button type="submit">🚀 Enviar Comentário</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 - Curso de Maquiagem Profissional
+  </footer>
+
+  <script>
+    function startCountdown(id) {
+      const el = document.getElementById(id);
+      let wasReload = performance.navigation
+        ? performance.navigation.type === performance.navigation.TYPE_RELOAD
+        : false;
+      let time = wasReload ? 120 : 240;
+      setInterval(() => {
+        let min = Math.floor(time / 60);
+        let sec = time % 60;
+        el.innerText = `${min}:${sec < 10 ? '0' : ''}${sec}`;
+        if (time > 0) time--;
+      }, 1000);
+    }
+    startCountdown("timer1");
+    startCountdown("timer2");
+  </script>
+
+</body>
+</html>
