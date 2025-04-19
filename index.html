@@ -1,155 +1,124 @@
-
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Curso de Maquiagem Profissional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Maquiagem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #ffe8e0, #fff8f0);
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
+      background: linear-gradient(180deg, #fff0e0, #ffe5cc);
+      color: #222;
     }
-
     header {
-      background: linear-gradient(to right, #ff4d4d, #ffcc00);
+      background: linear-gradient(to right, red, orange);
       color: white;
-      padding: 30px;
+      padding: 20px;
       text-align: center;
     }
-
     section {
-      padding: 30px;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .video-container {
       text-align: center;
     }
-
-    .video-section iframe {
-      max-width: 100%;
-      border-radius: 15px;
+    .video-container iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
     }
-
-    .btn {
-      background: linear-gradient(to right, #ff4d4d, #ffcc00);
-      color: white;
-      padding: 15px 30px;
-      margin: 15px auto;
+    .botao {
       display: inline-block;
+      background-color: #e60000;
+      color: white;
+      padding: 15px 25px;
       text-decoration: none;
-      font-size: 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      position: relative;
+    }
+    .timer {
+      font-size: 14px;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+    .comentarios {
+      background: linear-gradient(135deg, #ffe5cc, #ffd4bf);
+      padding: 40px;
       border-radius: 10px;
     }
-
-    .contador {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 20px 0;
-    }
-
-    .motivacional, .prova-social {
-      margin-top: 40px;
-    }
-
-    #comentarios {
-      background: linear-gradient(to right, #fff8f0, #ffe8e0);
-      padding: 40px 20px;
-    }
-
-    #comentarios h2 {
-      color: #ff4d4d;
-    }
-
-    form {
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      font-size: 16px;
-    }
-
-    button {
-      background: #ff4d4d;
+    footer {
+      background: #222;
       color: white;
-      padding: 12px;
-      border: none;
-      font-size: 16px;
-      border-radius: 6px;
+      text-align: center;
+      padding: 20px;
+    }
+    img.prova-social, img.motivacional {
+      display: block;
+      margin: 30px auto;
+      max-width: 90%;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>De R$ 400 por apenas R$ 297!</h1>
-  <p>Garanta sua vaga no curso de maquiagem profissional com certificado válido em todo Brasil!</p>
-  <div class="contador" id="timer1"></div>
-  <a href="https://go.hotmart.com/Y99219613A" class="btn">Quero me inscrever!</a>
-</header>
-
-<section>
-  <h2>Aprenda com os melhores</h2>
-  <p>Descubra as técnicas que transformam iniciantes em profissionais da beleza com alto faturamento!</p>
-</section>
-
-<section class="video-section">
-  <h2>Entenda como o curso funciona:</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ys-MdQSUr0" frameborder="0" allowfullscreen></iframe>
-</section>
-
-<section class="prova-social">
-  <img src="100 mil.png" alt="Mais de 100 mil alunas" style="max-width:100%; border-radius: 10px;">
-</section>
-
-<section class="motivacional">
-  <img src="TRISTE.png" alt="Imagem motivacional" style="max-width: 100%; border-radius: 10px;">
-</section>
-
-<!-- Comentários -->
-<section id="comentarios">
-  <h2>Comentários</h2>
-  <p>Veja o que estão dizendo sobre o curso e deixe sua dúvida ou mensagem!</p>
-  <form target="_blank" action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Seu nome" required>
-    <input type="email" name="email" placeholder="Seu e-mail" required>
-    <textarea name="message" placeholder="Deixe seu comentário" rows="5" required></textarea>
-
-    <!-- Campos ocultos -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="box">
-    <input type="hidden" name="_subject" value="Novo comentário na landing page">
-
-    <button type="submit">Enviar comentário</button>
-  </form>
-</section>
-
-<script>
-  function startTimer(id) {
-    let duration = 4 * 60; // 4 minutos
-    let display = document.getElementById(id);
-
-    function updateTimer() {
-      let minutes = Math.floor(duration / 60);
-      let seconds = duration % 60;
-      display.textContent = `Oferta expira em: ${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
-      duration--;
-
-      if (duration < 0) {
-        duration = 2 * 60; // Reinicia com 2 min se acabar ou ao atualizar
-      }
+  <header>
+    <h1>Curso de Maquiagem Profissional</h1>
+    <p>A oportunidade que você esperava por apenas <strong>R$297</strong> (de R$400)</p>
+  </header>  <section>
+    <h2>Início</h2>
+    <p>Você já sonhou em transformar sua paixão por beleza em uma fonte de renda? O curso de maquiagem profissional foi feito especialmente pra você, que quer começar do zero ou se aperfeiçoar.</p>
+    <a class="botao" href="https://go.hotmart.com/Y99219613A">
+      Garantir acesso
+      <span class="timer" id="timer1"></span>
+    </a>
+  </section>  <section>
+    <h2>Meio</h2>
+    <p>Com aulas práticas, dicas profissionais e um passo a passo completo, você aprenderá desde o preparo da pele até técnicas avançadas de contorno, iluminação e muito mais.</p>
+  </section>  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
+    <img class="prova-social" src="100 mil.png" alt="Mais de 100 mil alunas transformadas">
+  </div>  <section>
+    <h2>Fim</h2>
+    <p>Além de conteúdo exclusivo, você receberá certificado e suporte direto com especialistas da área. Está pronta para mudar sua vida com o que ama fazer?</p>
+    <a class="botao" href="https://go.hotmart.com/Y99219613A">
+      Começar agora
+      <span class="timer" id="timer2"></span>
+    </a>
+  </section>  <img class="motivacional" src="TRISTE.png" alt="Mensagem motivacional">  <section class="comentarios">
+    <h2>Comentários</h2>
+    <p>Veja o que estão dizendo sobre o curso ou deixe sua dúvida abaixo!</p>
+    <div id="disqus_thread"></div>
+  </section>  <footer>
+    <p>&copy; 2025 - Curso de Maquiagem Profissional</p>
+  </footer>  <script>
+    function startCountdown(id) {
+      const el = document.getElementById(id);
+      let time = 240;
+      setInterval(() => {
+        let min = Math.floor(time / 60);
+        let sec = time % 60;
+        el.innerText = `${min}:${sec < 10 ? '0' : ''}${sec}`;
+        if (time > 0) time--;
+      }, 1000);
     }
+    startCountdown("timer1");
+    startCountdown("timer2");
 
-    setInterval(updateTimer, 1000);
-    updateTimer();
-  }
-
-  startTimer("timer1");
-</script>
-
-</body>
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = 'curso-maquiagem';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://seu-usuario.disqus.com/embed.js'; // Substitua pelo seu usuário do Disqus
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script></body>
 </html>
