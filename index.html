@@ -1,15 +1,143 @@
-<section class="comentarios">
-  <h2>💬 Deixe seu comentário!</h2>
-  <p>Compartilhe sua dúvida ou experiência — vamos adorar saber o que você pensa!</p>
-  <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
-    <input type="text"   name="name"    placeholder="Seu nome"    required />
-    <input type="email"  name="email"   placeholder="Seu e‑mail"  required />
-    <textarea name="message" rows="4"   placeholder="Sua mensagem" required></textarea>
-    <!-- campos ocultos formsubmit -->
-    <input type="hidden" name="_captcha"  value="false" />
-    <input type="hidden" name="_template" value="box"   />
-    <input type="hidden" name="_subject"  value="Comentário na landing page" />
-    <input type="hidden" name="_url"      value="https://jonhjlr.github.io/Cursos-de-beleza-/" />
-    <button type="submit">🚀 Enviar Comentário</button>
-  </form>
-</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Maquiagem Profissional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    /* Fonte e fundo suave */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #fff0e0, #ffe5cc);
+      color: #222;
+    }
+
+    /* Cabeçalho com degradê vibrante */
+    header {
+      background: linear-gradient(to right, red, orange);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Imagem de topo */
+    .top-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Seções centrais */
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Vídeo e prova social */
+    .video-container {
+      text-align: center;
+    }
+    .video-container iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+    }
+    img.prova-social,
+    img.motivacional {
+      display: block;
+      margin: 30px auto;
+      max-width: 90%;
+      border-radius: 10px;
+    }
+
+    /* Botão principal com cronômetro */
+    .botao {
+      display: inline-block;
+      background: linear-gradient(to right, #e60000, #ff9900);
+      color: white;
+      padding: 18px 30px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      position: relative;
+      font-size: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .botao:hover {
+      transform: scale(1.05);
+    }
+    .timer {
+      font-size: 14px;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      background-color: #fff3cd;
+      color: #b30000;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    /* Seção de comentários super chamativa */
+    .comentarios {
+      background: repeating-linear-gradient(
+        -45deg,
+        rgba(255,204,0,0.7) 0,
+        rgba(255,204,0,0.7) 10px,
+        rgba(255,153,0,0.7) 10px,
+        rgba(255,153,0,0.7) 20px
+      );
+      border: 4px solid #e60000;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(230,0,0,0.8);
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+      animation: pulseSection 2.5s ease-in-out infinite;
+    }
+    @keyframes pulseSection {
+      0%,100% { box-shadow: 0 0 25px rgba(230,0,0,0.8); }
+      50%     { box-shadow: 0 0 45px rgba(230,0,0,1); }
+    }
+    .comentarios h2 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      color: #e60000;
+      text-shadow: 2px 2px #ffd700;
+    }
+    .comentarios p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+      color: #222;
+    }
+    .comentarios form input,
+    .comentarios form textarea {
+      width: 100%;
+      max-width: 600px;
+      margin: 10px auto;
+      padding: 14px;
+      font-size: 1.1em;
+      border: 2px solid #e65c00;
+      border-radius: 8px;
+    }
+    .comentarios form button {
+      background: linear-gradient(45deg, #ff0000, #ffcc00);
+      color: #222;
+      padding: 16px 30px;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      animation: popButton 1.8s ease-in-out infinite;
+    }
+    @keyframes popButton {
