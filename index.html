@@ -3,83 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso de Maquiagem Profissional</title>
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Aprenda maquiagem profissional do zero e transforme sua paixão em profissão. Promoção de R$400 por R$297!" />
-  <meta name="keywords" content="curso maquiagem, maquiagem profissional, make up, beleza" />
+  <title>Curso de Maquiagem</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    /* Fonte e fundo suave */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
       background: linear-gradient(180deg, #fff0e0, #ffe5cc);
       color: #222;
     }
-    /* Cabeçalho com degradê vibrante */
     header {
       background: linear-gradient(to right, red, orange);
       color: white;
       padding: 20px;
       text-align: center;
     }
-    header h1, header p {
-      margin: 0;
-    }
-    /* Imagem de topo com nome sem espaços */
-    .top-image {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      display: block;
-    }
-    /* Conteúdo principal semântico */
-    main {
+    section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-    section {
-      margin-bottom: 40px;
-    }
-    section h2 {
-      color: #cc0000;
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
-    section p {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    /* Botão principal com cronômetro melhor detectado */
-    .botao {
-      display: inline-block;
-      background: linear-gradient(to right, #e60000, #ff9900);
-      color: white;
-      padding: 18px 30px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      position: relative;
-      font-size: 18px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease;
-    }
-    .botao:hover {
-      transform: scale(1.05);
-    }
-    .timer {
-      font-size: 14px;
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      background-color: #fff3cd;
-      color: #b30000;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-    /* Vídeo e prova social */
     .video-container {
       text-align: center;
     }
@@ -88,154 +31,84 @@
       max-width: 700px;
       height: 400px;
       border: none;
-      border-radius: 10px;
     }
-    img.prova-social,
-    img.motivacional {
-      display: block;
-      margin: 30px auto;
-      max-width: 90%;
-      border-radius: 10px;
-    }
-    /* Seção de comentários super chamativa */
-    .comentarios {
-      background: repeating-linear-gradient(
-        -45deg,
-        rgba(255,204,0,0.7) 0,
-        rgba(255,204,0,0.7) 10px,
-        rgba(255,153,0,0.7) 10px,
-        rgba(255,153,0,0.7) 20px
-      );
-      border: 4px solid #e60000;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(230,0,0,0.8);
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: 40px auto;
-      text-align: center;
-      animation: pulseSection 2.5s ease-in-out infinite;
-    }
-    @keyframes pulseSection {
-      0%,100% { box-shadow: 0 0 25px rgba(230,0,0,0.8); }
-      50%     { box-shadow: 0 0 45px rgba(230,0,0,1); }
-    }
-    .comentarios h2 {
-      font-size: 2.8em;
-      margin-bottom: 20px;
-      color: #e60000;
-      text-shadow: 2px 2px #ffd700;
-    }
-    .comentarios p {
-      font-size: 1.1em;
-      margin-bottom: 25px;
-      color: #222;
-    }
-    .comentarios form input,
-    .comentarios form textarea {
-      width: 100%;
-      max-width: 600px;
-      margin: 10px auto;
-      padding: 14px;
-      font-size: 1.1em;
-      border: 2px solid #e65c00;
+    .botao {
+      display: inline-block;
+      background-color: #e60000;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
       border-radius: 8px;
-    }
-    .comentarios form button {
-      background: linear-gradient(45deg, #ff0000, #ffcc00);
-      color: #222;
-      padding: 16px 30px;
-      font-size: 1.1em;
       font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 15px;
-      animation: popButton 1.8s ease-in-out infinite;
+      position: relative;
     }
-    @keyframes popButton {
-      0%,100% { transform: scale(1); }
-      50%     { transform: scale(1.08); }
+    .timer {
+      font-size: 14px;
+      position: absolute;
+      top: 5px;
+      right: 10px;
     }
-    .comentarios form button:hover {
-      background: linear-gradient(45deg, #e60000, #ffb800);
+    .comentarios {
+      background: linear-gradient(135deg, #ffe5cc, #ffd4bf);
+      padding: 40px;
+      border-radius: 10px;
     }
-    /* Rodapé */
     footer {
       background: #222;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+    }
+    img.prova-social, img.motivacional {
+      display: block;
+      margin: 30px auto;
+      max-width: 90%;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Curso de Maquiagem Profissional</h1>
-    <p>Transforme sua paixão em profissão! Promoção de <strong>R$297</strong> (de R$400)</p>
+    <p>A oportunidade que você esperava por apenas <strong>R$297</strong> (de R$400)</p>
   </header>
-
-  <img class="top-image" src="maquiagem-1.jpg" alt="Curso de Maquiagem" />
-
-  <main>
-    <section>
-      <h2>Início</h2>
-      <p>Você já sonhou em transformar sua paixão por beleza em uma fonte de renda? O curso de maquiagem profissional foi feito especialmente pra você, que quer começar do zero ou se aperfeiçoar.</p>
-      <a class="botao" href="https://go.hotmart.com/Y99219613A">
-        Garantir acesso
-        <span class="timer" id="timer1"></span>
-      </a>
-    </section>
-
-    <section>
-      <h2>Meio</h2>
-      <p>Com aulas práticas, dicas profissionais e um passo a passo completo, você aprenderá desde o preparo da pele até técnicas avançadas de contorno, iluminação e muito mais.</p>
-    </section>
-
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
-      <img class="prova-social" src="100-mil.png" alt="Mais de 100 mil alunas transformadas">
-    </div>
-
-    <section>
-      <h2>Fim</h2>
-      <p>Além de conteúdo exclusivo, você receberá certificado e suporte direto com especialistas da área. Está pronta para mudar sua vida com o que ama fazer?</p>
-      <a class="botao" href="https://go.hotmart.com/Y99219613A">
-        Começar agora
-        <span class="timer" id="timer2"></span>
-      </a>
-    </section>
-
-    <img class="motivacional" src="triste.png" alt="Mensagem motivacional">
-
-    <section class="comentarios">
-      <h2>💬 Deixe seu comentário!</h2>
-      <p>Compartilhe sua dúvida ou experiência — vamos adorar saber o que você pensa!</p>
-      <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu e‑mail" required />
-        <textarea name="message" rows="4" placeholder="Sua mensagem" required></textarea>
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="box" />
-        <input type="hidden" name="_subject" value="Comentário na landing page" />
-        <input type="hidden" name="_url" value="https://jonhjlr.github.io/Cursos-de-beleza-/" />
-        <button type="submit">🚀 Enviar Comentário</button>
-      </form>
-    </section>
-  </main>
-
+  <section>
+    <h2>Início</h2>
+    <p>Você já sonhou em transformar sua paixão por beleza em uma fonte de renda? O curso de maquiagem profissional foi feito especialmente pra você, que quer começar do zero ou se aperfeiçoar.</p>
+    <a class="botao" href="https://go.hotmart.com/Y99219613A">
+      Garantir acesso
+      <span class="timer" id="timer1"></span>
+    </a>
+  </section>
+  <section>
+    <h2>Meio</h2>
+    <p>Com aulas práticas, dicas profissionais e um passo a passo completo, você aprenderá desde o preparo da pele até técnicas avançadas de contorno, iluminação e muito mais.</p>
+  </section>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
+    <img class="prova-social" src="100 mil.png" alt="Mais de 100 mil alunas transformadas">
+  </div>
+  <section>
+    <h2>Fim</h2>
+    <p>Além de conteúdo exclusivo, você receberá certificado e suporte direto com especialistas da área. Está pronta para mudar sua vida com o que ama fazer?</p>
+    <a class="botao" href="https://go.hotmart.com/Y99219613A">
+      Começar agora
+      <span class="timer" id="timer2"></span>
+    </a>
+  </section>
+  <img class="motivacional" src="TRISTE.png" alt="Mensagem motivacional">
+  <section class="comentarios">
+    <h2>Comentários</h2>
+    <p>Veja o que estão dizendo sobre o curso ou deixe sua dúvida abaixo!</p>
+    <div id="disqus_thread"></div>
+  </section>
   <footer>
-    &copy; 2025 - Curso de Maquiagem Profissional
+    <p>&copy; 2025 - Curso de Maquiagem Profissional</p>
   </footer>
-
   <script>
     function startCountdown(id) {
       const el = document.getElementById(id);
-      let wasReload = performance.navigation
-        ? performance.navigation.type === performance.navigation.TYPE_RELOAD
-        : false;
-      let time = wasReload ? 120 : 240;
+      let time = 240;
       setInterval(() => {
         let min = Math.floor(time / 60);
         let sec = time % 60;
@@ -245,7 +118,17 @@
     }
     startCountdown("timer1");
     startCountdown("timer2");
-  </script>
 
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = 'curso-maquiagem';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://seu-usuario.disqus.com/embed.js'; // Substitua pelo seu usuário do Disqus
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
 </body>
 </html>
