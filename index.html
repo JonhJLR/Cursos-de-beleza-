@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curso de Maquiagem</title>
+  <!-- Importação da fonte Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
@@ -101,11 +103,19 @@
   </section>
   <section>
     <h2>Meio</h2>
-    <p>Com aulas práticas, dicas profissionais e um passo a passo completo, você aprenderá desde o preparo da pele até técnicas avançadas de contorno, iluminação e muito mais.</p>
+    <!-- Início da seção modificada -->
+    <h3>O que você vai aprender</h3>
+    <p>Técnicas profissionais de maquiagem para iniciantes e avançados, gestão de clientes e estratégias para aumentar suas vendas.</p>
+    <!-- Fim da seção modificada -->
     <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem Profissional" style="display: block; margin: 30px auto; max-width: 90%; border-radius: 10px;">
   </section>
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
+    <!-- Início da seção modificada -->
+    <p style="text-align: center; font-weight: bold; font-size: 1.2em; margin: 30px 0;">
+      Vai ficar de fora dessa? Junte-se às milhares de alunas que já transformaram suas vidas!
+    </p>
+    <!-- Fim da seção modificada -->
     <img class="prova-social" src="100 mil.png" alt="Mais de 100 mil alunas transformadas">
   </div>
   <section>
@@ -117,42 +127,34 @@
     </a>
   </section>
   <img class="motivacional" src="TRISTE.png" alt="Mensagem motivacional">
+  <!-- Início da seção modificada -->
+  <p style="text-align: center; font-weight: bold; font-size: 1.1em; margin: 40px 0;">
+    Tire suas dúvidas diretamente pelo e-mail. Não perca a oportunidade por causa de uma dúvida — entre em contato agora!
+  </p>
+  <!-- Fim da seção modificada -->
   <section class="comentarios">
     <h2>Fale conosco</h2>
     <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
       <label for="nome">Nome:</label><br>
       <input type="text" id="nome" name="name" required><br>
 
-      <label for="email">E-mail:</label><br>
-      <input type="email" id="email" name="email" required><br>
+```
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email" required><br>
 
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="message" rows="5" required></textarea><br>
+  <label for="mensagem">Mensagem:</label><br>
+  <textarea id="mensagem" name="message" rows="5" required></textarea><br>
 
-      <!-- Campos ocultos para personalização -->
-      <input type="hidden" name="_subject" value="Nova mensagem do site">
-      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-      <input type="hidden" name="_captcha" value="false">
+  <!-- Campos ocultos para personalização -->
+  <input type="hidden" name="_subject" value="Nova mensagem do Curso de Maquiagem">
+  <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+  <input type="hidden" name="_captcha" value="false">
 
-      <button type="submit">Enviar</button>
-    </form>
+  <button type="submit">Enviar</button>
+</form>
+```
+
   </section>
   <footer>
-    <p>&copy; 2025 - Curso de Maquiagem Profissional</p>
-  </footer>
-  <script>
-    function startCountdown(id) {
-      const el = document.getElementById(id);
-      let time = 240;
-      setInterval(() => {
-        let min = Math.floor(time / 60);
-        let sec = time % 60;
-        el.innerText = `${min}:${sec < 10 ? '0' : ''}${sec}`;
-        if (time > 0) time--;
-      }, 1000);
-    }
-    startCountdown("timer1");
-    startCountdown("timer2");
-  </script>
-</body>
-</html>
+    <p>&copy; 2025
+::contentReference[oaicite:2]{index=2}
