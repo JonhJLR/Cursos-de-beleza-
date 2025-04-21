@@ -34,57 +34,34 @@
       border: none;
     }
     .botao {
-      display: inline-block;
-      background-color: #e60000;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      position: relative;
-    }
-    .timer {
-      font-size: 14px;
-      position: absolute;
-      top: 5px;
-      right: 10px;
-    }
-    .comentarios {
-      background: linear-gradient(135deg, #ffe5cc, #ffd4bf);
-      padding: 40px;
-      border-radius: 10px;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    img.prova-social, img.motivacional {
-      display: block;
-      margin: 30px auto;
-      max-width: 90%;
-      border-radius: 10px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background-color: #e60000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #cc0000;
-    }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(to right, #ff3c3c, #e60000);
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.timer {
+  background-color: #fff;
+  color: #e60000;
+  padding: 4px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
   </style>
 </head>
 <body>
