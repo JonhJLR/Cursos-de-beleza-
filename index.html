@@ -3,149 +3,879 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso de Maquiagem</title>
-  <!-- Importação da fonte Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="description" content="Curso de Maquiagem Profissional - Transforme sua paixão em renda com nosso curso completo e certificado">
+  <title>Curso de Maquiagem Profissional | Aprenda e Ganhe Dinheiro</title>
+  
+  <!-- Pré-conexão para melhor performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fontes otimizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32">
+  
+  <!-- CSS inline para melhor performance (pode ser externalizado em produção) -->
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
+    :root {
+      --primary: #FF2D55;
+      --primary-dark: #E61E4D;
+      --secondary: #FF9500;
+      --dark: #1A1A1A;
+      --light: #FFFFFF;
+      --gray: #F5F5F5;
+      --text: #333333;
+      --text-light: #666666;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+    
+    * {
       margin: 0;
-      background: linear-gradient(180deg, #fff0e0, #ffe5cc);
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      background: linear-gradient(to right, red, orange);
-      color: white;
-      padding: 20px;
-      text-align: center;
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background-color: var(--light);
+      overflow-x: hidden;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+    
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
     }
-    .video-container {
-      text-align: center;
+    
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+    h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+    h3 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+    
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--text-light);
     }
-    .video-container iframe {
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .container {
       width: 100%;
-      max-width: 700px;
-      height: 400px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--light);
+      padding: 1.5rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem 0;
+    }
+    
+    .header-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
+      background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1487&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .price-tag {
+      background-color: var(--light);
+      color: var(--primary);
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      margin: 1rem 0;
+      box-shadow: var(--shadow);
+    }
+    
+    .price-tag .old-price {
+      text-decoration: line-through;
+      font-size: 0.9em;
+      opacity: 0.7;
+      margin-right: 0.5rem;
+    }
+    
+    /* Seções */
+    section {
+      padding: 5rem 0;
+    }
+    
+    .section-light {
+      background-color: var(--gray);
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      margin: 1.5rem auto 0;
+      border-radius: 2px;
+    }
+    
+    /* Botões */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(to right, var(--primary), var(--primary-dark));
+      color: var(--light);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(230, 30, 77, 0.4);
+      transition: var(--transition);
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      margin: 1rem 0;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(230, 30, 77, 0.6);
+    }
+    
+    .btn i {
+      font-size: 1.2em;
+    }
+    
+    .btn-block {
+      display: flex;
+      width: 100%;
+    }
+    
+    .btn-secondary {
+      background: linear-gradient(to right, var(--secondary), #FF7B00);
+      box-shadow: 0 4px 15px rgba(255, 149, 0, 0.4);
+    }
+    
+    .btn-secondary:hover {
+      box-shadow: 0 6px 20px rgba(255, 149, 0, 0.6);
+    }
+    
+    /* Timer */
+    .timer {
+      background-color: var(--light);
+      color: var(--primary);
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-left: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .timer i {
+      margin-right: 0.25rem;
+      font-size: 0.8em;
+    }
+    
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 3rem 0;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Video */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 3rem auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
     }
-    .botao {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: linear-gradient(to right, #ff3c3c, #e60000);
-  color: white;
-  padding: 16px 28px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.botao:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.timer {
-  background-color: #fff;
-  color: #e60000;
-  padding: 4px 10px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: bold;
-}
+    
+    /* Benefícios */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .benefit-card {
+      background-color: var(--light);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: var(--transition);
+    }
+    
+    .benefit-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .benefit-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    /* Depoimentos */
+    .testimonials {
+      background-color: var(--dark);
+      color: var(--light);
+      text-align: center;
+    }
+    
+    .testimonials .section-title {
+      color: var(--light);
+    }
+    
+    .testimonials .section-title:after {
+      background: linear-gradient(to right, var(--secondary), var(--primary));
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .testimonial-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: left;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+    
+    .testimonial-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+    
+    .author-info h4 {
+      margin-bottom: 0.25rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .author-info p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+    
+    /* Garantia */
+    .guarantee {
+      text-align: center;
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 3rem;
+      border-radius: 12px;
+      margin: 3rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .guarantee-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
+      background-image: url('https://images.unsplash.com/photo-1519735777090-ec97162dc266?ixlib=rb-4.0.3&auto=format&fit=crop&w=1415&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .guarantee-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .guarantee-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      color: var(--light);
+    }
+    
+    /* Formulário */
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: var(--light);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+    
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(255, 45, 85, 0.2);
+    }
+    
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 2rem 0;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+    
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+    
+    .social-links a:hover {
+      background-color: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      padding: 4rem 0;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--light);
+    }
+    
+    .cta-section h2 {
+      color: var(--light);
+    }
+    
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Destaques */
+    .highlight {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .highlight:after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-color: rgba(255, 45, 85, 0.3);
+      z-index: -1;
+      transform: skewX(-15deg);
+    }
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+      section {
+        padding: 3rem 0;
+      }
+      
+      .benefits-grid, .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
+    
+    /* Animações */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    
+    /* Contador */
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    
+    .countdown-item {
+      text-align: center;
+      background-color: var(--light);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      min-width: 70px;
+      box-shadow: var(--shadow);
+    }
+    
+    .countdown-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    .countdown-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-light);
+    }
   </style>
 </head>
 <body>
+  <!-- Header com CTA principal -->
   <header>
-    <h1>Curso de Maquiagem Profissional</h1>
-    <p>A oportunidade que você esperava por apenas <strong>R$297</strong> (de R$400)</p>
+    <div class="header-bg"></div>
+    <div class="header-content container">
+      <h1>Transforme sua paixão por maquiagem em uma carreira lucrativa</h1>
+      <p class="highlight">Curso 100% online com certificado reconhecido</p>
+      
+      <div class="price-tag">
+        <span class="old-price">De R$400</span>
+        <span class="current-price">Por apenas R$297</span>
+      </div>
+      
+      <div class="countdown">
+        <div class="countdown-item">
+          <div class="countdown-value" id="hours">00</div>
+          <div class="countdown-label">Horas</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="minutes">15</div>
+          <div class="countdown-label">Minutos</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="seconds">00</div>
+          <div class="countdown-label">Segundos</div>
+        </div>
+      </div>
+      
+      <a href="https://go.hotmart.com/Y99219613A" class="btn pulse">
+        <i class="fas fa-arrow-right"></i> QUERO ME INSCREVER AGORA
+      </a>
+      
+      <p><i class="fas fa-lock"></i> Pagamento 100% seguro</p>
+    </div>
   </header>
-  <section>
-    <h2>vamos lá conhecer um novo jeito de conseguir uma nova renda?</h2>
-    <p>Você já sonhou em transformar sua paixão por beleza em uma fonte de renda? O curso de maquiagem profissional foi feito especialmente pra você, que quer começar do zero ou se aperfeiçoar? estamos disponibilizando o mais completo curso de maquiagem com aulas totalmente online e com certificado CLIQUE NO BOTÃO A BAIXO E CONHEÇA MAIS.</p>
-    <a class="botao" href="https://go.hotmart.com/Y99219613A">
-      Garantir acesso POR 297R$ CLIQUE AQUI
-      <span class="timer" id="timer1"></span>
-    </a>
+  
+  <!-- Seção Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Você está pronta para dominar as técnicas que as profissionais usam e começar a faturar com maquiagem?</h2>
+      <p>Nosso curso foi desenvolvido para transformar iniciantes em profissionais qualificadas e ajudar maquiadoras experientes a elevarem seu trabalho e aumentarem seus ganhos.</p>
+      
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <a href="https://go.hotmart.com/Y99219613A" class="btn btn-secondary">
+        <i class="fas fa-credit-card"></i> GARANTIR MEU ACESSO COM DESCONTO
+      </a>
+    </div>
   </section>
-  <section>
-    <h3>O que você vai aprender</h3>
-    <p>Técnicas profissionais de maquiagem para iniciantes e avançados, gestão de clientes e estratégias para aumentar suas vendas.</p>
-    <img src="MAQUIAGEM (1).jpg" alt="Curso de Maquiagem Profissional" style="display: block; margin: 30px auto; max-width: 90%; border-radius: 10px;">
-<p style="text-align: center; font-size: 1.1em; margin: 20px auto; max-width: 90%; font-family: 'Roboto', sans-serif; font-weight: bold;">
-  Conheça mais sobre nosso programa de cursos. Temos outros nichos de cursos também. Entre em contato para mais informações sobre cursos alternativos.
-</p> 
- </section>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/2Ys-MdQSUr0" allowfullscreen></iframe>
-    <p style="text-align: center; font-weight: bold; font-size: 1.2em; margin: 30px 0;">
-      Vai ficar de fora dessa? Junte-se às milhares de alunas que já transformaram suas vidas!
-    </p>
-   <img src="100 mil.png" alt="Mais de 100 mil alunos" style="display: block; margin: 30px auto; max-width: 90%; border-radius: 10px;">
-  </div>
-  <section>
-    <p>Além de conteúdo exclusivo, você receberá certificado e suporte direto com especialistas da área. Está pronta para mudar sua vida com o que ama fazer?</p>
-    <a class="botao" href="https://go.hotmart.com/Y99219613A">
-      COMEÇAR AGORA? CLIQUE AQUI POR:297R$
-      <span class="timer" id="timer2"></span>
-    </a>
+  
+  <!-- Seção Benefícios -->
+  <section class="section-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>O que você vai aprender no curso</h2>
+        <p>Técnicas profissionais que vão transformar sua carreira</p>
+      </div>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Técnicas Profissionais</h3>
+          <p>Domine desde os básicos até as técnicas avançadas usadas pelas melhores maquiadoras do mercado.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Gestão de Clientes</h3>
+          <p>Aprenda a atrair, fidelizar e aumentar seu ticket médio com estratégias comprovadas.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Marketing Pessoal</h3>
+          <p>Descubra como se destacar nas redes sociais e atrair clientes sem gastar com anúncios.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Certificado Reconhecido</h3>
+          <p>Receba seu certificado digital após a conclusão para comprovar sua qualificação.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Suporte Exclusivo</h3>
+          <p>Acesso a um grupo privado com especialistas para tirar dúvidas e networking.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Acesso Vitalício</h3>
+          <p>Assista as aulas quando e onde quiser, no seu ritmo, com atualizações gratuitas.</p>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://go.hotmart.com/Y99219613A" class="btn">
+          <i class="fas fa-shopping-cart"></i> QUERO ME INSCREVER AGORA
+        </a>
+      </div>
+    </div>
   </section>
- <img src="TRISTE.png" alt="Mensagem motivacional" style="display: block; margin: 30px auto; max-width: 90%; border-radius: 10px;">
-    Tire suas dúvidas diretamente pelo e-mail. Não perca a oportunidade por causa de uma dúvida — entre em contato agora!
-  </p>
-  <section class="comentarios">
-    <h2>Fale conosco</h2>
-    <form action="https://formsubmit.co/jonhjlr66@gmail.com" method="POST">
-      <label for="nome">Nome:</label><br>
-      <input type="text" id="nome" name="name" required><br>
-      <label for="email">E-mail:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="message" rows="5" required></textarea><br>
-
-      <input type="hidden" name="_subject" value="Nova mensagem do Curso de Maquiagem">
-      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-      <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit">Enviar</button>
-    </form>
+  
+  <!-- Seção Depoimentos -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>O que nossas alunas dizem</h2>
+        <p>Mais de 100 mil profissionais transformadas</p>
+      </div>
+      
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Depois do curso consegui triplicar meus clientes e hoje trabalho apenas com maquiagens para eventos. Minha vida mudou completamente!"</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana Carolina">
+            <div class="author-info">
+              <h4>Ana Carolina</h4>
+              <p>Maquiadora Profissional</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p>"Comecei do zero e em 3 meses já estava fazendo maquiagens pagas. O suporte do curso foi essencial para eu perder o medo de começar."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Juliana Santos">
+            <div class="author-info">
+              <h4>Juliana Santos</h4>
+              <p>Iniciante no mercado</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p>"Já trabalhava com maquiagem, mas as técnicas de vendas e gestão de clientes me ajudaram a aumentar meus ganhos em 60%."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Roberta Fernandes">
+            <div class="author-info">
+              <h4>Roberta Fernandes</h4>
+              <p>Maquiadora há 5 anos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img src="100 mil.png" alt="Mais de 100 mil alunas transformadas" style="max-width: 300px; margin: 2rem auto; display: block;">
+    </div>
   </section>
+  
+  <!-- Seção Garantia -->
+  <section>
+    <div class="container">
+      <div class="guarantee">
+        <div class="guarantee-bg"></div>
+        <div class="guarantee-content">
+          <div class="guarantee-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h2>Garantia Incondicional de 7 Dias</h2>
+          <p>Se em até 7 dias você achar que o curso não é para você, devolvemos 100% do seu investimento sem burocracia. Você não tem nada a perder!</p>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://go.hotmart.com/Y99219613A" class="btn btn-block pulse">
+          <i class="fas fa-arrow-right"></i> QUERO GARANTIR MEU ACESSO HOJE
+        </a>
+        
+        <div class="timer">
+          <i class="fas fa-clock"></i>
+          <span id="timer">Oferta termina em: 15:00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Seção FAQ -->
+  <section class="section-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Perguntas Frequentes</h2>
+        <p>Tire suas dúvidas antes de começar</p>
+      </div>
+      
+      <div class="benefits-grid" style="max-width: 800px; margin: 0 auto;">
+        <div class="benefit-card">
+          <h3>Para quem é este curso?</h3>
+          <p>Para qualquer pessoa que queira aprender maquiagem profissional, seja para trabalhar na área ou apenas para se maquiar melhor. Do iniciante ao avançado.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <h3>Quanto tempo tenho acesso?</h3>
+          <p>O acesso é vitalício! Você pode assistir as aulas quando quiser, quantas vezes quiser, e ainda recebe todas as atualizações futuras sem custo adicional.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <h3>Preciso comprar muitos produtos?</h3>
+          <p>Não! Ensinamos técnicas que funcionam com produtos acessíveis e damos alternativas para diferentes orçamentos.</p>
+        </div>
+        
+        <div class="benefit-card">
+          <h3>Como recebo o certificado?</h3>
+          <p>Após completar todas as aulas e atividades, você receberá um certificado digital reconhecido que pode ser impresso ou compartilhado online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Seção CTA Final -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Não deixe essa oportunidade passar!</h2>
+      <p>Comece hoje mesmo sua jornada como maquiadora profissional com nosso curso completo e suporte exclusivo.</p>
+      
+      <div class="price-tag" style="margin: 2rem auto;">
+        <span class="old-price">De R$400</span>
+        <span class="current-price">Por apenas R$297</span>
+      </div>
+      
+      <a href="https://go.hotmart.com/Y99219613A" class="btn btn-secondary pulse">
+        <i class="fas fa-credit-card"></i> QUERO ME INSCREVER AGORA
+      </a>
+      
+      <p style="margin-top: 1.5rem;"><i class="fas fa-lock"></i> Pagamento 100% seguro | Garantia de 7 dias</p>
+    </div>
+  </section>
+  
+  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025</p>
+    <div class="container">
+      <h3>Curso de Maquiagem Profissional</h3>
+      
+      <div class="footer-links">
+        <a href="#"><i class="fas fa-file-alt"></i> Termos de Uso</a>
+        <a href="#"><i class="fas fa-lock"></i> Política de Privacidade</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Ajuda</a>
+      </div>
+      
+      <div class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      
+      <p class="copyright">© 2025 Curso de Maquiagem Profissional. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-  <!-- SCRIPT DO CRONÔMETRO -->
+  
+  <!-- Scripts -->
   <script>
-    function startCountdown(elementId, minutes) {
-      let timer = minutes * 60;
-      const el = document.getElementById(elementId);
-
+    // Contador regressivo
+    function startCountdown() {
+      let hours = 0;
+      let minutes = 15;
+      let seconds = 0;
+      
+      const hoursElement = document.getElementById('hours');
+      const minutesElement = document.getElementById('minutes');
+      const secondsElement = document.getElementById('seconds');
+      const timerElement = document.getElementById('timer');
+      
       function updateTimer() {
-        const mins = Math.floor(timer / 60);
-        const secs = timer % 60;
-        el.textContent = `(${mins}:${secs < 10 ? '0' : ''}${secs})`;
-        timer--;
-        if (timer >= 0) {
-          setTimeout(updateTimer, 1000);
+        if (seconds === 0) {
+          if (minutes === 0) {
+            if (hours === 0) {
+              // Tempo esgotado
+              clearInterval(countdown);
+              document.querySelectorAll('.timer').forEach(el => {
+                el.innerHTML = '<i class="fas fa-exclamation-circle"></i> Oferta encerrada!';
+              });
+              return;
+            } else {
+              hours--;
+              minutes = 59;
+            }
+          } else {
+            minutes--;
+          }
+          seconds = 59;
         } else {
-          el.textContent = "(tempo esgotado)";
+          seconds--;
         }
+        
+        // Atualiza os elementos
+        hoursElement.textContent = hours.toString().padStart(2, '0');
+        minutesElement.textContent = minutes.toString().padStart(2, '0');
+        secondsElement.textContent = seconds.toString().padStart(2, '0');
+        
+        timerElement.innerHTML = `<i class="fas fa-clock"></i> Oferta termina em: ${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
       }
-
-      updateTimer();
+      
+      // Atualiza a cada segundo
+      const countdown = setInterval(updateTimer, 1000);
+      updateTimer(); // Chama imediatamente para evitar atraso inicial
     }
-
-    startCountdown("timer1", 15); // 15 minutos
-    startCountdown("timer2", 15); // 15 minutos
+    
+    // Inicia quando o DOM estiver carregado
+    document.addEventListener('DOMContentLoaded', startCountdown);
+    
+    // Suaviza o scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   </script>
 </body>
 </html>
